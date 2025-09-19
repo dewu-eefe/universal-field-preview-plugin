@@ -5,8 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>universal-field-preview-plugin</title>
-		<script crossorigin="anonymous" src="https://cdn-jumper.dewu.com/sdk-linker/du-oteltrace.js"></script>
-
+	<script crossorigin="anonymous" src="https://cdn-jumper.dewu.com/sdk-linker/du-oteltrace.js"></script>
+	  
+	<script>
+      if(window.DUOTEL) {
+        window.DUOTEL.setConfig({
+          appId: 'universal-field-preview-plugin',
+          env: 'prod',
+          appName: '通用字段预览',               
+          businessType: '效率前端',          
+          type: 'B',
+          sendParams: true,                 
+          sendResponse: true,               
+          sendReqHeader: true,              
+          sendResHeader: true             
+        });
+      } else {
+        console.log('DUOTEL is not initialized');
+      }
+    </script>
+	  
     <script type="module" crossorigin src="./assets/index-CoxpMDL-.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BNrvsTz5.css">
   </head>
